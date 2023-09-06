@@ -3,44 +3,48 @@ import cupcake from "../../resources/images/cupcake.jpg"
 import barista from "../../resources/images/barista.jpg"
 import menu from "../../resources/images/2023-05-25 (1).jpg"
 import './gallery.css'
+import { useState } from 'react';
 function Gallery(){
 
+  const [gallery,setGallery]=useState([ 
+    { srcs: blackforst,
+  caption: 'Black Forest'
+},
+{ srcs: cupcake,
+caption: 'Cup Cake'
+},
+{ srcs: barista,
+caption: 'Barista'
+},
+{ srcs: menu,
+caption: 'Bill Folder'
+},
+
+]);
+
+  //  setGallery([...gallery, { srcs: blackforst,
+  //   caption: 'Black Forest'
+  // },
+  // { srcs: cupcake,
+  // caption: 'Cup Cake'
+  // },
+  // { srcs: barista,
+  // caption: 'Barista'
+  // },
+  // { srcs: menu,
+  // caption: 'Bill Folder'
+  // },])
     return(
-        <div>
-        <ul class="gallery" role="list">
-          <li>
+        <div className='whole'>
+        <ul className="gallery" role="list">
+         { gallery.map((value, index) => { return(<li key={index}>
             <figure tabindex="0">
-              <img alt="" src={blackforst} />
-              <figcaption>Black Forest</figcaption>
+              <img alt="" src={value.srcs} />
+              <figcaption>{value.caption}</figcaption>
             </figure>
-          </li>
-          <li>
-            <figure tabindex="0">
-              <img alt="" src={cupcake} />
-              <figcaption>Cup Cake</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure tabindex="0">
-              <img alt="" src={barista} />
-              <figcaption>Barista</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure tabindex="0">
-              <img alt="" src={menu} />
-              <figcaption>Bill Folder</figcaption>
-            </figure>
-          </li>
-        </ul>
-        <ul class="gallery" role="list">
-          <li>
-            <figure tabindex="0">
-              <img alt="" src={blackforst} />
-              <figcaption>Black Forest</figcaption>
-            </figure>
-          </li>
-          <li>
+          </li>) })
+          }
+          {/* <li>
             <figure tabindex="0">
               <img alt="" src={cupcake} />
               <figcaption>Cup Cake</figcaption>
@@ -57,35 +61,28 @@ function Gallery(){
               <img alt="" src={menu} />
               <figcaption>Bill Folder</figcaption>
             </figure>
-          </li>
+          </li> */}
         </ul>
-        <ul class="gallery" role="list">
-          <li>
+        
+       <ul className="gallery" role="list">
+         { gallery.map((value, index) => { return(<li key={index}>
             <figure tabindex="0">
-              <img alt="" src={blackforst}/>
-              <figcaption>Black Forest</figcaption>
+              <img alt="" src={value.srcs} />
+              <figcaption>{value.caption}</figcaption>
             </figure>
-          </li>
-          <li>
+          </li>) })
+          }
+         </ul>
+         <ul className="gallery" role="list">
+         { gallery.map((value, index) => { return(<li key={index}>
             <figure tabindex="0">
-              <img alt="" src={cupcake} />
-              <figcaption>Cup Cake</figcaption>
+              <img alt="" src={value.srcs} />
+              <figcaption>{value.caption}</figcaption>
             </figure>
-          </li>
-          <li>
-            <figure tabindex="0">
-              <img alt="" src={barista} />
-              <figcaption>Barista</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure tabindex="0">
-              <img alt="" src={menu} />
-              <figcaption>Bill Folder</figcaption>
-            </figure>
-          </li>
-        </ul>
-        <ul class="gallery" role="list">
+          </li>) })
+          }
+         </ul>
+        <ul className="gallery" role="list">
           <li>
             <figure tabindex="0">
               <img alt="" src={blackforst} />

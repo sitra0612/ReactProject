@@ -1,4 +1,4 @@
-import "./about.css";
+import styles from "./about.module.css";
 import coffee from '../../resources/images/coffee.jpg'
 import user1 from '../../resources/images/download (1).jpg'
 import user2 from '../../resources/images/download (2).jpg'
@@ -8,11 +8,11 @@ function About(){
     return(
         <>
 
-<section class="about">
+ <section className={styles.about}>
 		<h1>About Us</h1>
 		<p style={{fontWeight:'bold'}}>Chocolate Café is a leading Cafe...</p>
-		<div class="about-info">
-			<div class="about-img">
+		<div className={styles['about-info']}>
+			<div className={styles['about-img']}>
 				<img src={coffee} alt="Coffee"/>
 			</div>
 			<div>
@@ -30,45 +30,45 @@ function About(){
 		</div>
 	</section>
 
-	<section class="team">
+	<section className={styles.team}>
 		<h1>Meet Our Team</h1>
-		<div class="team-cards">
+		<div class={styles['team-cards']}>
 			{/* <!-- Cards here --> */}
 			{/* <!-- Card 1 --> */}
-			<div class="card">
-				<div class="card-img">
+			<div className={styles.card}>
+				<div className={styles['card-img']}>
 					<img src={user1} alt="User 1"/>
 				</div>
-				<div class="card-info">
-					<h2 class="card-name">Abel</h2>
-					<p class="card-role">Barista</p>
-					<p class="card-email">abel123@gmail.com</p>
-					<p><button class="button">Contact</button></p>
+				<div className={styles['card-info']}>
+					<h2 className={styles['card-name']}>Abel</h2>
+					<p className={styles['card-role']}>Barista</p>
+					<p className={styles['card-email']}>abel123@gmail.com</p>
+					<p><button className={styles.button}>Contact</button></p>
 				</div>
 			</div>
 
 			{/* <!-- Card 2 --> */}
-			<div class="card">
-				<div class="card-img">
+			<div className={styles.card}>
+				<div className={styles['card-img']}>
 					<img src={user2} alt="User 2"/>
 				</div>
-				<div class="card-info">
-					<h2 class="card-name">Almaz</h2>
-					<p class="card-role">cafeteria assistant</p>
-					<p class="card-email">almaz23@gmail.com</p>
-					<p><button class="button">Contact</button></p>
+				<div className={styles['card-info']}>
+					<h2 className={styles['card-name']}>Almaz</h2>
+					<p className={styles['card-role']}>cafeteria assistant</p>
+					<p className={styles['card-email']}>almaz23@gmail.com</p>
+					<p><button className={styles.button}>Contact</button></p>
 				</div>
 			</div>
 			{/* <!-- Card 3 --> */}
-			<div class="card">
-				<div class="card-img">
+			<div className={styles.card}>
+				<div className={styles['card-img']}>
 					<img src={user3} alt="User 3"/>
 				</div>
-				<div class="card-info">
-					<h2 class="card-name">Yonas</h2>
-					<p class="card-role">service worker</p>
-					<p class="card-email">yoni12@gmail.com</p>
-					<p><button class="button">Contact</button></p>
+				<div className={styles['card-info']}>
+					<h2 className={styles['card-name']}>Yonas</h2>
+					<p className={styles['card-role']}>service worker</p>
+					<p className={styles['card-email']}>yoni12@gmail.com</p>
+					<p><button className={styles.button}>Contact</button></p>
 				</div>
 			</div>
 		</div>

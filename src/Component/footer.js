@@ -1,8 +1,8 @@
-import './Home/home.css'
+import './nav.module.css';
 function Footer(){
 
     return(
-        <footer class="footer">
+        <footer>
     <p>&copy; 2023 Chocolate Café. All rights reserved.</p>
 </footer>
     )
