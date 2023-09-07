@@ -20,10 +20,15 @@ function Contact() {
   updateMessage(m.target.value);
 }
   function submit(e){
+    if(name!="" && e.target.value){
        alert(name + " ,your request is submitted successfully!");
        updateName("");
        updateEmail("");
        updateMessage("");
+    }
+    else{
+      alert("You did not submit the request!");
+    }
   }
   return (
     <>

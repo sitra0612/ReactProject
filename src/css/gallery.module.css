@@ -6,7 +6,7 @@
   justify-content: center;
   text-align: center;
  
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
 }
 
@@ -23,6 +23,7 @@ img {
   background: #e9bd83;
 	padding: 0px 10px 0px 10px;
 	text-align: center;
+  
 }
 .gallery {
   list-style:none;
@@ -32,9 +33,9 @@ img {
   display: grid;
   grid-template-columns: repeat(4, minmax(20ch, 1fr));
   gap: 1rem ;
- 
   width: 100%;
-  position: relative;
+  /* position: relative; */
+
 }
 
 .gallery img {
@@ -129,6 +130,6 @@ img {
   width: 100%;
   height: 100%;
   box-shadow: inset 0 0 2rem 1rem hsl(0 0% 0% / 65%);
-  position: relative;
+  /* position: relative; */
 }
 

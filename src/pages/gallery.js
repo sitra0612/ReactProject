@@ -15,6 +15,8 @@ import style from '../css/gallery.module.css'
 import Navigation from '../Component/Navigation';
 import Footer from '../Component/footer';
 import { useState } from 'react';
+
+
 function Gallery(){
 
   const [gallery,setGallery]=useState([ 
@@ -61,8 +63,8 @@ caption: 'Barista'
     return(
         <div>
 
-          <Navigation/>
-          <div className={style['cont']}>
+      <Navigation />
+        <div className={style['cont']}>
           <ul className={style["gallery"]} role="list">
          { gallery.map((value, index) => { return(
           <> 
