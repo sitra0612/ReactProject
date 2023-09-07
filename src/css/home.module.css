@@ -3,18 +3,19 @@
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  position: relative;
-  min-height: 100vh;
-  min-width: 221vh;
+  /* position: relative; */
+  /* top: 0px; */
+  /* bottom: 0px; */
+  /* height: 400px; */
+  width: 100vw;
+  padding: 200px;
   background-image: linear-gradient(
       to bottom right,
-      rgba(96, 76, 76, 0.6),
-      rgba(96, 76, 76, 0.6)
+      rgba(129, 79, 32, 0.6),
+      rgba(190, 185, 113, 0.6)
     ),
-    url("../../resources/images/bg-image.jpeg");
+    url("../resources/images/bg-image.jpeg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +26,7 @@
   color: white;
 }
 .content h2 {
-  font-size: 32px;
+  font-size: 52px;
   padding: 5px;
   color: white;
 }

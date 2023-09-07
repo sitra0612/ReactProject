@@ -1,16 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-
-
 .container{
-  width: 100%;
-  background: #e9bd83;
-  border-radius: 6px;
-  padding: 5px 100px 70px 60px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  transform: translateY(5px);
+  width: 85%;
+  background: #c08b45;
+  border-radius: 10px;
+  padding: 40px 20px 30px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+   /* transform: translateY(5px); */
+ 
   position: relative;
+  margin:auto;
 }
 .container .content{
   display: flex;
@@ -47,7 +47,7 @@
   margin-bottom: 10px;
 }
 .content .left-side .details .topic{
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 500;
 }
 .content .left-side .details .text-one,
@@ -56,8 +56,8 @@
   color: black;
 }
 .container .content .right-side{
-  width: 75%;
-  margin-left: 75px;
+  width: 60%;
+  margin-right: 35px;
 }
 .content .right-side .topic-text{
   font-size: 23px;
@@ -82,14 +82,18 @@
   resize: none;
 }
 .right-side .message-box{
-  min-height: 110px;
+  height: 110px;
+  width: 100%;
 }
-.right-side .input-box textarea{
+.right-side .message-box textarea{
   padding-top: 6px;
+  height: 110px;
+  width: 100%;
 }
 .right-side .button{
   display: inline-block;
   margin-top: 12px;
+  color: #c08b45;
 }
 .right-side .button input[type="button"]{
   color: #F0F1F8;
@@ -103,7 +107,7 @@
   transition: all 0.3s ease;
 }
 .button input[type="button"]:hover{
-  background: black;
+  background: rgb(194, 92, 3);
 }
 
 @media (max-width: 950px) {
@@ -139,4 +143,3 @@
    margin-left: 0;
  }
 }
-

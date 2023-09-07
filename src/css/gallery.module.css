@@ -5,9 +5,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  position: relative;
-  min-height: 100vh;
-  min-width: 221vh;
+ 
+  height: 100vh;
+  width: 100vw;
 }
 
 /* Make images easier to work with */
@@ -19,15 +19,22 @@ img {
 /***
  🟣 Modern CSS Solutions Demo Styles
  */
-
+.cont{
+  background: #e9bd83;
+	padding: 0px 10px 0px 10px;
+	text-align: center;
+}
 .gallery {
-  list-style: none;
-  padding: 0;
+  list-style:none;
+  padding-top: 10px;
+  padding-bottom: 0px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(20ch, 1fr));
+  gap: 1rem ;
+ 
   width: 100%;
+  position: relative;
 }
 
 .gallery img {
